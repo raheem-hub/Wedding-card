@@ -1,7 +1,7 @@
 /* General Body Styling */
 body {
     background: linear-gradient(90deg, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%);
-    font-family: 'Averia Serif Libre', cursive;
+    /* font-family: 'Averia Serif Libre', cursive; */
     margin: 0;
     padding: 0;
     display: flex;
@@ -49,60 +49,52 @@ body {
     box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
   }
-  
-
-  /* Card Hover Effect */
- 
-
-  /* .card1 img {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-  } */
-
   .text-overlay {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000;
     text-align: center;
     padding: 10px;
-    font-family: 'Averia Serif Libre', cursive;
     animation: slideIn 2s ease-out;
+    min-width: 70%;
   }
 
   .text-overlay .first-text {
     font-weight: bold;
     font-size: 32px;
-    font-family: 'Pinyon Script', cursive;
-    margin-bottom: 10px;
+    font-family: "Amiri", serif;
+    margin-bottom: 25px;
     opacity: 0;
     animation: textFadeIn 1.5s 0.5s forwards;
   }
-
+  .second-text{
+    font-family: "Amiri", serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .sixth-text{
+    margin-bottom: 10px;
+  }
   .text-overlay .second-text,
-  .text-overlay .fourth-text,
-  .text-overlay .sixth-text,
   .text-overlay .seventh-text,
   .text-overlay .eight-text {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 15px;
+    
     line-height: 1.5;
     opacity: 0;
     animation: textFadeIn 1.5s forwards;
   }
+  .text-overlay .seventh-text,
+  .text-overlay .eight-text {
+    font-size: 15px;
+  }
 
-  .text-overlay .third-text,
+  .text-overlay .fourth-text,
+  .text-overlay .sixth-text,
   .text-overlay .fifth-text {
-    font-weight: bold;
-    font-size: 28px;
-    font-family: 'Pinyon Script', cursive;
-    margin-bottom: 15px;
-    opacity: 0;
+    font-size: 25px;
+    font-family: "Style Script", serif;
     animation: textFadeIn 1.5s 1s forwards;
   }
    /* Icons section */
@@ -110,13 +102,13 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
   }
 
   .icon-section a {
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
@@ -126,9 +118,22 @@ body {
   }
 
   .icon-section i {
-    font-size: 35px;
+    font-size: 20px;
   }
-
+hr{
+  height: 1px;
+  background-color: #F2CBC2;
+  border: none;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.third-text{
+  font-family: "Diphylleia", serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
   /* Animations */
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
