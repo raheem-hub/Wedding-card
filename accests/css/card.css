@@ -1,65 +1,123 @@
-body{
-        background: linear-gradient(90deg, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%);
+/* General Body Styling */
+body {
+    background: linear-gradient(90deg, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%);
+    font-family: 'Averia Serif Libre', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: bgAnimation 8s infinite alternate ease-in-out;
+  }
 
-    
+  /* Background Animation */
+  @keyframes bgAnimation {
+    0% { background: linear-gradient(90deg, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%); }
+    50% { background: linear-gradient(90deg, hsla(11, 64%, 85%, 1) 0%, hsla(13, 50%, 95%, 1)100%); }
+    100% { background: radial-gradient(circle, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%); }
+   
+  }
 
-}
-.main {
+  .main {
     text-align: center;
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 20px;
-}
+  }
 
-.card1 {
+  .card1 {
     position: relative;
-    width: 95%;
+    width: 95%; /* Adjusted width to take more space */
+    max-width: 600px; /* Increased maximum width */
     margin: 0 auto;
     text-align: center;
-}
-
-.card1 img {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .card1 img {
     width: 100%;
     margin: 0 auto;
     display: block;
-    box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-}
+  }
+  
 
-.text-overlay {
+  /* Card Hover Effect */
+  .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 50px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* .card1 img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  } */
+
+  .text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #000; /* Choose a color that contrasts with the image */
+    color: #000;
     text-align: center;
     padding: 10px;
     font-family: 'Averia Serif Libre', cursive;
-}
+    animation: slideIn 2s ease-out;
+  }
 
-.text-overlay .first-text {
+  .text-overlay .first-text {
     font-weight: bold;
     font-size: 32px;
     font-family: 'Pinyon Script', cursive;
     margin-bottom: 10px;
-}
+    opacity: 0;
+    animation: textFadeIn 1.5s 0.5s forwards;
+  }
 
-.text-overlay .second-text, 
-.text-overlay .fourth-text, 
-.text-overlay .sixth-text, 
-.text-overlay .seventh-text, 
-.text-overlay .eight-text {
+  .text-overlay .second-text,
+  .text-overlay .fourth-text,
+  .text-overlay .sixth-text,
+  .text-overlay .seventh-text,
+  .text-overlay .eight-text {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 15px;
     line-height: 1.5;
-}
+    opacity: 0;
+    animation: textFadeIn 1.5s forwards;
+  }
 
-.text-overlay .third-text, 
-.text-overlay .fifth-text {
+  .text-overlay .third-text,
+  .text-overlay .fifth-text {
     font-weight: bold;
     font-size: 28px;
     font-family: 'Pinyon Script', cursive;
     margin-bottom: 15px;
-}
+    opacity: 0;
+    animation: textFadeIn 1.5s 1s forwards;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slideIn {
+    from { transform: translate(-50%, -70%); opacity: 0; }
+    to { transform: translate(-50%, -50%); opacity: 1; }
+  }
+
+  @keyframes textFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
