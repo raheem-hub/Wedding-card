@@ -3,12 +3,12 @@
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .card1 {
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -23,7 +23,7 @@
 
 .text-overlay {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000; /* Choose a color that contrasts with the image */
@@ -34,9 +34,9 @@
 
 .text-overlay .first-text {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 55px;
     font-family: 'Pinyon Script', cursive;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .text-overlay .second-text, 
@@ -45,7 +45,7 @@
 .text-overlay .seventh-text, 
 .text-overlay .eight-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 15px;
     line-height: 1.5;
 }
