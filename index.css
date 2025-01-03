@@ -1,0 +1,59 @@
+.main {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.card1 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card1 img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 40px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Choose a color that contrasts with the image */
+    text-align: center;
+    padding: 10px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.text-overlay .first-text {
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Pinyon Script', cursive;
+    margin-bottom: 10px;
+}
+
+.text-overlay .second-text, 
+.text-overlay .fourth-text, 
+.text-overlay .sixth-text, 
+.text-overlay .seventh-text, 
+.text-overlay .eight-text {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.text-overlay .third-text, 
+.text-overlay .fifth-text {
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Pinyon Script', cursive;
+    margin-bottom: 15px;
+}
