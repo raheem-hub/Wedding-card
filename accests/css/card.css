@@ -105,6 +105,29 @@ body {
     opacity: 0;
     animation: textFadeIn 1.5s 1s forwards;
   }
+   /* Icons section */
+   .icon-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .icon-section a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .icon-section a:hover {
+    transform: scale(1.2);
+    color: #ff4081; /* Hover color */
+  }
+
+  .icon-section i {
+    font-size: 25px;
+  }
 
   /* Animations */
   @keyframes fadeIn {
