@@ -1,14 +1,20 @@
+body{
+        background: linear-gradient(90deg, hsla(13, 50%, 95%, 1) 0%, hsla(11, 64%, 85%, 1) 100%);
+
+    
+
+}
 .main {
     text-align: center;
     position: relative;
     width: 100%;
     height: auto;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .card1 {
     position: relative;
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     text-align: center;
 }
@@ -23,7 +29,7 @@
 
 .text-overlay {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #000; /* Choose a color that contrasts with the image */
@@ -34,9 +40,9 @@
 
 .text-overlay .first-text {
     font-weight: bold;
-    font-size: 55px;
+    font-size: 32px;
     font-family: 'Pinyon Script', cursive;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .text-overlay .second-text, 
@@ -45,7 +51,7 @@
 .text-overlay .seventh-text, 
 .text-overlay .eight-text {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 15px;
     line-height: 1.5;
 }
